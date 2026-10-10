@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.subtitle {
+    color: gray;
+}
+
+h2 {
+    color: darkblue;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.image-frame {
+    text-align: center;
+    margin: 20px;
+}
+
+.image-frame img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: gray;
+}
