@@ -1,25 +1,111 @@
-
-<!--
-    Centria Edu - Basics of Web Development
-
-    Original author: Ville Heikkiniemi
-    Modified by: Kentin Amiaud
-    Last modified: 2026-09-09
-
-    Based on the original course template.
--->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ville Heikkiniemi">
-    <link rel="icon" href="favicon.ico">
-
-    <title>Centria Edu | Basics of Web Development</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Your name">
+  <title>Web Development Assignments – Kentin Amiaud</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Basics of Web Development</p>
+      <h1>My Web Development Assignments</h1>
+      <p>
+        My name is Kentin Amiaud. This page brings together the Assignments
+        I have completed during the course.
+      </p>
+
+      <nav aria-label="Exercise sections">
+        <a href="#s-assignments">S Assignments</a>
+        <a href="#a-assignments">A Assignments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="s-assignments" aria-labelledby="s-header">
+      <h2 id="s-header">S Assignments</h2>
+      <p>Classroom Assignments and the skills practised in them.</p>
+
+      <div class="card-grid">
+        <!-- Add a card here for each S exercise you have completed. -->
+        <article class="card">
+          <p class="task-id">S2</p>
+          <h3>Publishing a Web Page</h3>
+          <p>I practised separating the CSS styles from the HTML structure into an other file.</p>
+          <a class="card-link" href="s2/index.html">Open S2</a>
+        </article>
+
+        <article class="card">
+          <p class="task-id">S3</p>
+          <h3>Publishing a Web Page</h3>
+          <p>I practised publishing a web page on GitHub Pages.</p>
+          <a class="card-link" href="s3/index.html">Open S3</a>
+        </article>
+
+        <article class="card">
+          <p class="task-id">S4</p>
+          <h3>Photo Gallery</h3>
+          <p>
+            I created a photo gallery with links connecting the home page and the gallery.
+          </p>
+          <a class="card-link" href="s4/index.html">Open s4</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="a-assignments" aria-labelledby="a-header">
+      <h2 id="a-header">A Assignments</h2>
+      <p>Graded assignments and the skills demonstrated in them.</p>
+
+      <div class="card-grid">
+        <!-- Add a card here for each A assignment you have completed. -->
+        <article class="card">
+          <p class="task-id">A1</p>
+          <h3>Fixing the HTML Structure</h3>
+          <p>
+            I fixed the HTML errors and moved the styles into a separate
+            CSS file.
+          </p>
+          <a class="card-link" href="a1/index.html">Open A1</a>
+        </article>
+
+        <article class="card">
+          <p class="task-id">A2</p>
+          <h3>Creating My Own Web Page</h3>
+          <p>
+            I created my own personal web page and included a photograph that I took myself.
+          </p>
+          <a class="card-link" href="a2/index.html">Open A2</a>
+        </article>
+
+        <article class="card">
+          <p class="task-id">A3</p>
+          <h3>Photo Gallery</h3>
+          <p>
+            I created a photo gallery with links connecting the home page and the gallery, using photos I took myself.
+          </p>
+          <a class="card-link" href="a3/index.html">Open A3</a>
+        </article>
+
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Original template: OpenAI / ChatGPT</p>
+      <p>Modified by: Kentin Amiaud</p>
+    </div>
+  </footer>
+</body>
+
 </html>
