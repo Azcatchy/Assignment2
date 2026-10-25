@@ -153,6 +153,39 @@ footer {
     color: var(--light);
 }
 
+.card-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/road.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light);
+}
+
+.card-bg h2,
+.card-bg p {
+    color: var(--light);
+}
+
+.grayscale-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 4px;
+    filter: grayscale(100%);
+}
+
+.card a {
+    display: block;
+    margin-top: 1rem;
+}
+
+.card a img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
 @media (max-width: 700px) {
     nav ul {
         display: none;
