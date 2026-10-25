@@ -8,10 +8,11 @@ html {
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
-  color: #172033;
-  background-color: #f3f5f9;
+  color: #1e293b;
+  /* Fond teinté légèrement de gris-bleu très doux */
+  background-color: #f1f5f9;
 }
 
 .container {
@@ -20,40 +21,67 @@ body {
 }
 
 .site-header {
-  padding-block: 3rem;
+  padding-block: 4rem 3.5rem;
+  /* En-tête avec un dégradé violet/indigo profond et moderne */
   color: #ffffff;
-  background-color: #172033;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  border-bottom: 5px solid #6366f1;
 }
 
 .eyebrow {
   font-weight: 700;
-  color: #b8d6ff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: #c7d2fe;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
   max-width: 22ch;
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
   line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
 }
 
 nav a {
-  color: #ffffff;
+  color: #e0e7ff;
+  text-decoration: none;
+  font-weight: 600;
   text-underline-offset: 0.25em;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 main {
-  padding-block: 2rem 3rem;
+  padding-block: 3rem 4rem;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+section h2 {
+  font-size: 1.75rem;
+  color: #1e1b4b;
+  margin-bottom: 0.25rem;
+}
+
+section > p {
+  color: #475569;
+  margin-top: 0;
 }
 
 .card-grid {
@@ -66,51 +94,75 @@ section {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  border: 1px solid #d9e0ea;
+  padding: 1.75rem;
+  border: 1px solid #e2e8f0;
   border-radius: 1rem;
+  /* Cartes blanches avec une ombre portée douce et une bordure supérieure colorée */
   background-color: #ffffff;
+  border-top: 4px solid #4f46e5;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow-wrap: anywhere;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -3px rgba(79, 70, 229, 0.1);
 }
 
 .task-id {
   margin: 0;
-  font-weight: 700;
-  color: #174ea6;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: #4f46e5;
+  letter-spacing: 0.025em;
 }
 
 .card h3 {
   margin-block: 0.5rem;
+  color: #0f172a;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #334155;
+  font-size: 0.95rem;
 }
 
 .card-link {
   align-self: flex-start;
   margin-top: auto;
-  padding: 0.65rem 1rem;
+  padding: 0.65rem 1.15rem;
   border-radius: 0.5rem;
   color: #ffffff;
-  background-color: #174ea6;
+  /* Boutons d'un beau violet/indigo vif */
+  background-color: #4f46e5;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
 }
 
 .card-link:hover {
-  background-color: #103b80;
+  background-color: #4338ca;
 }
 
 a:focus-visible {
-  outline: 3px solid #bd5400;
+  outline: 3px solid #f59e0b;
   outline-offset: 4px;
 }
 
 .site-footer {
-  padding-block: 1.5rem;
-  border-top: 1px solid #d9e0ea;
-  background-color: #ffffff;
+  padding-block: 2rem;
+  border-top: 1px solid #cbd5e1;
+  background-color: #1e293b;
+  color: #94a3b8;
+  font-size: 0.9rem;
 }
 
 .site-footer p {
   margin-block: 0.25rem;
+  color: #cbd5e1;
 }
 
 @media (max-width: 900px) {
